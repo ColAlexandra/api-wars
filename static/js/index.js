@@ -174,4 +174,4 @@ window.load = function (source) {
 }
 ;
 
-window.load('https://swapi.co/api/planets/');
+window.load('https://swapi.co/api/planets');
