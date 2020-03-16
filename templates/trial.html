@@ -1,0 +1,54 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+<nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination" id="page-turner">
+            <li class="page-item"><a class="page-link" id="previous-page" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" id="next-page" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+</nav>
+<table class="table table-dark table-hover" value="{{ session['usercolor'] }}">
+    <thead>
+    <tr>
+        {% for item in headers %}
+        <th scope="col">{{ item }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+
+    <tbody id="tbody"><tr><td><div class="hidden" id="loading-table">Loading...</div></td></tr>
+    </tbody>
+
+</table>
+<div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4><div class="hidden" id="loading-modal">Loading...</div></h4>
+                <h4 class="modal-title" id="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-dark table-hover">
+                    <thead>
+                    {% for item in modal_headers %}
+                    <th scope="col">{{ item }}</th>
+                    {% endfor %}
+                    </thead>
+                    <tbody id="modal-table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
