@@ -6,7 +6,7 @@ cffi==1.13.2
 chardet==3.0.4
 Click==7.0
 colorama==0.4.1
-cryptography==2.1.4
+cryptography==3.2
 decorator==4.1.2
 distro==1.4.0
 Flask==1.1.1
