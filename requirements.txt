@@ -41,7 +41,7 @@ psycopg2==2.8.4
 ptyprocess==0.6.0
 pycodestyle==2.5.0
 pycparser==2.19
-Pygments==2.2.0
+Pygments==2.7.4
 pymacaroons==0.13.0
 PyNaCl==1.1.2
 pyRFC3339==1.0
